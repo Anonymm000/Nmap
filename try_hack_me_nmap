@@ -94,3 +94,14 @@ exploit:- Attempt to exploit a vulnerability
 auth:- Attempt to bypass authentication for running services (e.g. Log into an FTP server anonymously)
 brute:- Attempt to bruteforce credentials for running services
 discovery:- Attempt to query running services for further information about the network (e.g. query an SNMP server).
+
+NSE Working
+--script=smb-enum-users,smb-enum-shares ### multi script do
+nmap -p 80 --script http-put --script-args http-put.url='/dav/shell.php',http-put.file='./shell.php'
+https://nmap.org/nsedoc/ ## you will lookup
+
+Script pwd installation
+/usr/share/nmap/scripts/script.db
+sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse).
+nmap --script-updatedb
+
