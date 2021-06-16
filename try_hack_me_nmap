@@ -104,4 +104,7 @@ Script pwd installation
 /usr/share/nmap/scripts/script.db
 sudo wget -O /usr/share/nmap/scripts/<script-name>.nse https://svn.nmap.org/nmap/scripts/<script-name>.nse).
 nmap --script-updatedb
-
+######
+FireWall evision
+https://nmap.org/book/man-bypass-firewalls-ids.html
+-Pn -f
